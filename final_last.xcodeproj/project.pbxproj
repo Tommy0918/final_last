@@ -11,6 +11,16 @@
 		655125182781A0FE008589AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125172781A0FE008589AA /* ContentView.swift */; };
 		6551251A2781A0FF008589AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655125192781A0FF008589AA /* Assets.xcassets */; };
 		6551251D2781A0FF008589AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6551251C2781A0FF008589AA /* Preview Assets.xcassets */; };
+		655125252781A1E6008589AA /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125242781A1E6008589AA /* PlaceView.swift */; };
+		655125272781A1F7008589AA /* PlaceNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125262781A1F7008589AA /* PlaceNavView.swift */; };
+		655125292781A208008589AA /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125282781A208008589AA /* NewsView.swift */; };
+		6551252B2781A220008589AA /* NewsNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551252A2781A220008589AA /* NewsNavView.swift */; };
+		6551252D2781A22E008589AA /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551252C2781A22E008589AA /* Place.swift */; };
+		655125302781A257008589AA /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551252F2781A257008589AA /* News.swift */; };
+		655125322781A469008589AA /* GetPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125312781A469008589AA /* GetPlace.swift */; };
+		655125352781A492008589AA /* GetNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125342781A492008589AA /* GetNews.swift */; };
+		655125372781A4A5008589AA /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125362781A4A5008589AA /* NetworkReachability.swift */; };
+		6551253A2781A532008589AA /* SwiftUIPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 655125392781A532008589AA /* SwiftUIPullToRefresh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,15 @@
 		655125172781A0FE008589AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		655125192781A0FF008589AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6551251C2781A0FF008589AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		655125242781A1E6008589AA /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
+		655125262781A1F7008589AA /* PlaceNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNavView.swift; sourceTree = "<group>"; };
+		655125282781A208008589AA /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		6551252A2781A220008589AA /* NewsNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsNavView.swift; sourceTree = "<group>"; };
+		6551252C2781A22E008589AA /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		6551252F2781A257008589AA /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		655125312781A469008589AA /* GetPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlace.swift; sourceTree = "<group>"; };
+		655125342781A492008589AA /* GetNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNews.swift; sourceTree = "<group>"; };
+		655125362781A4A5008589AA /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6551253A2781A532008589AA /* SwiftUIPullToRefresh in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +71,11 @@
 		655125142781A0FE008589AA /* final_last */ = {
 			isa = PBXGroup;
 			children = (
-				655125152781A0FE008589AA /* final_lastApp.swift */,
-				655125172781A0FE008589AA /* ContentView.swift */,
+				655125232781A10B008589AA /* View */,
+				6551252E2781A232008589AA /* Model */,
+				655125332781A471008589AA /* ViewModel */,
 				655125192781A0FF008589AA /* Assets.xcassets */,
+				655125152781A0FE008589AA /* final_lastApp.swift */,
 				6551251B2781A0FF008589AA /* Preview Content */,
 			);
 			path = final_last;
@@ -65,6 +87,37 @@
 				6551251C2781A0FF008589AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		655125232781A10B008589AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				655125172781A0FE008589AA /* ContentView.swift */,
+				655125242781A1E6008589AA /* PlaceView.swift */,
+				655125262781A1F7008589AA /* PlaceNavView.swift */,
+				655125282781A208008589AA /* NewsView.swift */,
+				6551252A2781A220008589AA /* NewsNavView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6551252E2781A232008589AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6551252C2781A22E008589AA /* Place.swift */,
+				6551252F2781A257008589AA /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		655125332781A471008589AA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				655125312781A469008589AA /* GetPlace.swift */,
+				655125342781A492008589AA /* GetNews.swift */,
+				655125362781A4A5008589AA /* NetworkReachability.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +136,9 @@
 			dependencies = (
 			);
 			name = final_last;
+			packageProductDependencies = (
+				655125392781A532008589AA /* SwiftUIPullToRefresh */,
+			);
 			productName = final_last;
 			productReference = 655125122781A0FE008589AA /* final_last.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 655125092781A0FE008589AA;
+			packageReferences = (
+				655125382781A532008589AA /* XCRemoteSwiftPackageReference "swiftui-pull-to-refresh" */,
+			);
 			productRefGroup = 655125132781A0FE008589AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +196,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655125372781A4A5008589AA /* NetworkReachability.swift in Sources */,
+				655125322781A469008589AA /* GetPlace.swift in Sources */,
+				655125352781A492008589AA /* GetNews.swift in Sources */,
+				655125252781A1E6008589AA /* PlaceView.swift in Sources */,
 				655125182781A0FE008589AA /* ContentView.swift in Sources */,
+				655125302781A257008589AA /* News.swift in Sources */,
+				655125272781A1F7008589AA /* PlaceNavView.swift in Sources */,
+				6551252B2781A220008589AA /* NewsNavView.swift in Sources */,
+				655125292781A208008589AA /* NewsView.swift in Sources */,
+				6551252D2781A22E008589AA /* Place.swift in Sources */,
 				655125162781A0FE008589AA /* final_lastApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +409,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		655125382781A532008589AA /* XCRemoteSwiftPackageReference "swiftui-pull-to-refresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-pull-to-refresh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		655125392781A532008589AA /* SwiftUIPullToRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 655125382781A532008589AA /* XCRemoteSwiftPackageReference "swiftui-pull-to-refresh" */;
+			productName = SwiftUIPullToRefresh;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6551250A2781A0FE008589AA /* Project object */;
 }
